@@ -1,0 +1,7 @@
+﻿__pycache__/
+*.pyc
+.vscode/
+# If you don't want big binaries in this repo:
+*.docx
+*.pdf
+*.png
