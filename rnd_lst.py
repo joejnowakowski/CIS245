@@ -23,11 +23,7 @@ def get_min(random_list):
     return min(random_list)
 
 def avg_from_list(random_list):
-    avg = 0
-    for num in random_list:
-        avg += num
-    avg /= len(random_list)
-    return avg
+    return sum(random_list) / len(random_list)
 
 if __name__ == "__main__":
     main()

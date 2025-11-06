@@ -6,3 +6,5 @@ if len(parts) > 1:
 else:
     file += ".txt"
 print(file)
+
+print(type(int("8")))
