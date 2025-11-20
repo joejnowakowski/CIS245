@@ -14,7 +14,7 @@ service. Print the unformatted JSON response received.
 
 
 
-import requests, re
+import json, requests, re
 
 
 
@@ -34,6 +34,7 @@ def main():
         else:
             unformatted_data = get_weather_data(base_url, zip_code, appid)
             print(unformatted_data) # json-formatted nested dictionary
+            print(json.dumps(unformatted_data, indent=4))
 
 
         continue_lookup = input("Would you like to continue looking up the weather? [Y/N]").lower()

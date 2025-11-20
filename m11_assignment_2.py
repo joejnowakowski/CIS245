@@ -35,9 +35,9 @@ def main():
             temp = unformatted_data["main"]["temp"]
             city = unformatted_data["name"]
             humidity = unformatted_data["main"]["humidity"]
-            gust = unformatted_data["wind"]['gust']
+            
             print(f"\nThe current temperature in {city}, with a zip code of {zip_code}, is {temp}° F\n"
-                  f"with {humidity}% humidity and gusts of wind measured at {gust} MPH.\n")
+                  f"with {humidity}% humidity.\n")
         
         continue_lookup = input("Would you like to continue looking up the weather? [Y/N]").lower()
 
